@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<h1>INFO...</h1>
+
+<body>
+
+    <div class="wrap">
+        <h1>Los directores más importantes</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat possimus, natus quae culpa eum eius iure
+            eligendi beatae sint alias tempora animi voluptates explicabo odit itaque tempore consectetur quia, libero
+            repellat illo nemo a accusamus debitis necessitatibus! Dicta repellendus voluptatum, laborum fugiat
+            repudiandae totam. Delectus sunt facere autem debitis nisi pariatur veniam voluptate exercitationem. Aperiam
+            esse iste voluptas doloremque facere non soluta rem eveniet magni consectetur. Sapiente, tempore
+            perspiciatis. Adipisci consectetur at qui repellendus quos incidunt. Cum repudiandae unde accusamus
+            exercitationem mollitia rem sint impedit ullam, earum quam, magni autem?
+        </p>
+        <div class="tan">
+            <script type="text/javascript">
+                var Ingr1 = prompt("Nombra un director")
+
+
+                switch (Ingr1) {
+                    case "david lynch":
+                        document.write("Con Lynch encontras una buena peli surrealista");
+                        break;
+                    case "guillermo del toro":
+                        document.write("Del Toro te ofrece muertes por doquier");
+                        break;
+                    case "stan lee":
+                        document.write("Quien no disfruta una utopia");
+                        break;
+                    case "tarantino":
+                        document.write("Tarantino es famoso por sus peleas y efectos de sonido");
+                        break;
+                    default:
+                        document.write("Aqui te dejo una lista de los mejores");
+                }
+
+            </script>
+        </div>
+        <div class="direc">
+            <h2>Contemporaneos:</h2>
+            <div id="parrafillo">
+                Podriamos comenzar con:
+                <ul class="lit">
+                    <li>Lynch</li>
+                    <li>Steven Spielberg</li>
+                    <li>Tarantino</li>
+                    <li>Stan Lee</li>
+                </ul>
+                <script type="text/javascript">
+                    function cambiar() {
+                        var el = document.getElementById("parrafillo");
+                        el.innerHTML = "Como olvidarlos:" +
+                            "<ol><li>Guillermo Del Toro</li><li>Martin Scorsese</li><li>Tim Burton</li></ol>";
+                    }
+                    setTimeout("cambiar()", 10000);
+                </script>
+
+            </div>
+        </div>
+        <div class="izd">
+            <h3>Series: 
+            <a id="myAnchor" target="_blank"
+                    href="https://www.netflix.com/watch/80189222?trackId=255824129"> HillHouse</a>
+            
+            <button onclick="myFunction()">Otra opción</button>
+            <script>
+                function myFunction() {
+                    const element = document.getElementById("myAnchor");
+                    element.innerHTML = " Wonderlust";
+                    element.href = "https://www.netflix.com/watch/80212508?trackId=255824129&tctx=0%2C0%2CNAPA%40%40%7C76408e52-6162-45c7-961a-a54fdf5f4c8c-32253624_titles%2F1%2F%2Fwonderl%2F0%2F0%2CNAPA%40%40%7C76408e52-6162-45c7-961a-a54fdf5f4c8c-32253624_titles%2F1%2F%2Fwonderl%2F0%2F0%2Cunknown%2C%2C76408e52-6162-45c7-961a-a54fdf5f4c8c-32253624%7C1%2CtitlesResults%2C%2CVideo%3A80211465";
+                }
+            </script>
+            </h3>
+        </div>
+</body>
+<footer>
+    <img src="img/feed.jpg" width="100%" , margin="15px auto">
+</footer>
+
+</html>
